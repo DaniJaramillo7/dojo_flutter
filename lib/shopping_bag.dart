@@ -14,7 +14,7 @@ class ShoppingBag extends StatelessWidget {
   Widget build(BuildContext context) {
     final cartState = context.watch<CartState>();
     return InkWell(
-      // onTap: () => Navigator.of(context).pushNamed('/cart'),
+      onTap: () => Navigator.of(context).pushNamed('/cart'),
       child: SizedBox(
         width: width,
         child: LayoutBuilder(
